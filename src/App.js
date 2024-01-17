@@ -5,6 +5,8 @@ import Dashboard from './admin/Dashboard';
 import Login from './user/Login';
 import QuestionSet from './user/QuestionSet';
 import Home from './user/Home';
+import Result from './user/Result';
+
 import { BrowserRouter,Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
      <Routes>
       <Route path="/question" element={<QuestionSet />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<Dashboard/>}/>
     </Routes>
     </BrowserRouter>
     </div>
